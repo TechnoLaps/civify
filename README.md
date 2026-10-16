@@ -5,7 +5,7 @@
 [![Website](https://img.shields.io/badge/Production-civify.cv-2563eb?style=for-the-badge&logo=google-chrome&logoColor=white)](https://civify.cv)
 [![MCP Server](https://img.shields.io/badge/MCP_Gateway-mcp.civify.cv-7c3aed?style=for-the-badge&logo=anthropic&logoColor=white)](https://mcp.civify.cv/mcp)
 [![npm version](https://img.shields.io/npm/v/%40civify%2Fmcp-server?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@civify/mcp-server)
-[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-emerald)](https://www.gnu.org/licenses/agpl-3.0.html)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-emerald?style=for-the-badge)](https://www.gnu.org/licenses/agpl-3.0.html)
 
 **Civify** is an end-to-end, enterprise-grade career enablement platform and AI agent gateway.  
 From structured resume parsing and ATS scoring to job-specific tailoring, PII redaction, high-fidelity PDF rendering, and Model Context Protocol (MCP) agent tools.
@@ -20,9 +20,9 @@ From structured resume parsing and ATS scoring to job-specific tailoring, PII re
 
 The Civify ecosystem is composed of three core subsystems:
 
-1. **[`Civify-fe`](./Civify-fe)** — Next.js 16 & React 19 Frontend, featuring an interactive resume builder, rich-text editing, multi-language support (English & Arabic with RTL), headless Chromium PDF export microservice, and MCP OAuth consent UI.
-2. **[`civify`](./civify)** — Core Spring Boot 3.4 & Java 21 Backend, delivering multi-format document ingestion (PDF, DOCX, OCR), dual-engine ATS scoring, Gemini 3 / Vertex AI CV tailoring, PII redaction, Flyway database migrations, Redis caching, and global/regional multi-gateway payments.
-3. **[`civify-mcp`](./civify-mcp)** — Model Context Protocol (MCP) Gateway, exposing Civify's intelligence directly to LLM agents (ChatGPT, Claude Desktop, Cursor, OpenCode, Cline) via Stdio, SSE, and Streamable HTTP with OAuth 2.0 PKCE authentication.
+1. **[`Civify-fe`](https://github.com/EngAbdalrhman/Civify-fe)** — Next.js 16 & React 19 Frontend, featuring an interactive resume builder, rich-text editing, multi-language support (English & Arabic with RTL), headless Chromium PDF export microservice, and MCP OAuth consent UI.
+2. **[`civify`](https://github.com/EngAbdalrhman/Civify)** — Core Spring Boot 3.4 & Java 21 Backend, delivering multi-format document ingestion (PDF, DOCX, OCR), dual-engine ATS scoring, Gemini 3 / Vertex AI CV tailoring, PII redaction, Flyway database migrations, Redis caching, and global/regional multi-gateway payments.
+3. **[`civify-mcp`](https://github.com/TechnoLaps/civify-mcp)** — Model Context Protocol (MCP) Gateway, exposing Civify's intelligence directly to LLM agents (ChatGPT, Claude Desktop, Cursor, OpenCode, Cline) via Stdio, SSE, and Streamable HTTP with OAuth 2.0 PKCE authentication.
 
 ---
 
@@ -399,7 +399,35 @@ Please ensure that tests pass before opening a pull request. Never commit creden
 
 ## 📄 License
 
-This project is open-source software licensed under the **[AGPL v3 License](LICENSE)**.
+The Civify frontend, backend, and MCP gateway are licensed under the **GNU Affero
+General Public License v3.0 or later** (`AGPL-3.0-or-later`). See the canonical
+license text in each repository: [frontend](Civify-fe/LICENSE),
+[backend](civify/LICENSE), and [MCP gateway](civify-mcp/LICENSE).
+
+### What AGPLv3 means
+
+- You may use, study, modify, and distribute Civify, including for commercial work,
+  provided you meet the license terms.
+- If you modify Civify and provide it to users over a network, such as by operating
+  a hosted web app, API, or MCP service, you must offer those users the corresponding
+  source code for your modified version under AGPLv3.
+- You must preserve copyright and license notices, and provide the AGPLv3 license
+  with copies you distribute.
+- AGPLv3 does not grant permission to use the Civify name, logo, or other brand
+  assets. Do not imply that an independent deployment is the official Civify service.
+
+Commercial use is permitted under AGPLv3; it does not require automatic approval
+from Civify when the AGPLv3 obligations are met. Organisations that need rights
+outside AGPLv3, such as keeping modifications private, should contact
+[Civify](https://civify.cv) to discuss a separate commercial license. A commercial
+license is not granted by this repository.
+
+### Contributions and releases
+
+By submitting a contribution, you agree that it may be distributed under AGPLv3.
+Do not submit code, documents, data, or assets that you do not have permission to
+contribute. Maintainers must obtain appropriate contributor permission before
+relicensing community contributions under different terms.
 
 ---
 
